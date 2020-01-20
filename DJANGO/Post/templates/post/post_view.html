@@ -1,0 +1,96 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+<div class="container">
+          <div class="row no-gutters">
+              <div class="col-12">
+                  <div class="alert alert-secondary" role="alert">
+                   <div class="he-co-right fr">
+                      <div class="menu bp-set vm">
+                            <ul>
+                              <li><a href="#">Games</a></li>
+                              <li><a href="#" target="_blank" rel="noopener noreferrer">News</a></li>
+                              <li><a href="#" target="_blank" rel="noopener noreferrer">Support</a></li>
+                              <li><a href="#" target="_blank" rel="noopener noreferrer">Careers</a></li>
+                              <li><a href="#" target="_blank" rel="noopener noreferrer">About Us</a></li>
+                            </ul>
+                      </div>
+                    <div class="he-co-search bp-set vm">
+                      <span class="icon-magnifying_glass_1"></span>
+                    </div>
+                    <div class="clr"></div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div class="alert alert-primary" role="alert" style='min-height: 800px'>
+                    A simple primary alert—check it out!
+                  </div>
+              </div>
+              <div class="col-8">
+                  <div class="alert alert-secondary" role="alert" style='min-height: 800px'>
+                      <div class="text-center">
+                          {% for content in content %}
+                          {% endfor %}
+                      </div>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div class="alert alert-primary" role="alert" style='min-height: 800px'>
+                    
+                  </div>
+              </div>
+          </div>
+      </div>
+
+{% endblock %} 
+{% block footer %}
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/luccui2301">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/luc-cui-935951161/">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+{% endblock %}

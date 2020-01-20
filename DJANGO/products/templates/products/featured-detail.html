@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class='container'>
+    <div class='row'>
+        <div class='col'>
+        <h1>{{ object.title }}</h1>
+        <a>{{ object.post_times|timesince }} ago</a>
+        <p>{{ object.description|linebreaks }}</p>
+        {% if object.image %}
+        <img src='{{ object.image.url }}' class='img-fluid'/>
+        {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock  %}

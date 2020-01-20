@@ -1,0 +1,4 @@
+.container py-5 {
+	display: flex;
+	flex-direction: row;
+}

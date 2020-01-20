@@ -1,0 +1,31 @@
+{%  extends "base.html" %}
+
+
+
+{% block content %}
+    <div class="text-center">
+        <h1 class="text-muted">Contact Page</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="col-sm-6 col-12">
+                    <form method="post"> {% csrf_token %}
+                        {{ form }}
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+{% block footer %}
+<footer class="container py-5">
+      <h5>About Me</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://www.facebook.com/luccui2301">Facebook</a></li>
+        <li><a class="text-muted" href="https://www.instagram.com/luc_cui_0/">Instagram</a></li>
+        <li><a class="text-muted" href="">Google</a></li>
+        <li><a class="text-muted" href="https://github.com/luccui000">Github</a></li>
+      </ul>
+</footer>
+{% endblock %}

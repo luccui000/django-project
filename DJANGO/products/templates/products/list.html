@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if next %}
+    {% if user.is_authenticated %}
+    <p>Your account doesn't have access to this page. To proceed, please login with an account that has access.</p>
+    {% else %}
+    <p>Please login to see this page.</p>
+    {% endif %}
+{% else %}
+<div class="container">
+    <div class='row'>
+    {% for object in object_list %}
+
+        <div class='col'>
+            
+                {% include 'products/snippets/card.html' with instance=object %}
+                {% if forloop.counter|divisibleby:4 %}
+                
+                </div></div><div class='row'><div class='col-12'><hr/></div>
+            {% else %}
+                </div>
+            {% endif %}
+    {% endfor %}
+    </div>
+</div>    
+</div>
+{% endif %}
+{% endblock  %}

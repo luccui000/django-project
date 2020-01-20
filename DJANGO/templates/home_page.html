@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- Navbar -->
+{% include 'base/navbar.html' with brand_name='Product' %}
+
+
+{% block base_header %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="login/main.css">
+{% endblock %}
+
+<!-- Content -->
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <h2 class="text-muted">Welcome to Luc Cui Website</h2><br/>
+                    <img src="{% static 'image/lacay.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+<!-- Footer -->
+
+{% block footer %}
+<div class="container">
+    <div class="row">
+    <div class="<col>">    
+    <footer class="container py-5">
+      <h5>About Me</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://www.facebook.com/luccui2301">Facebook</a></li>
+        <li><a class="text-muted" href="https://www.instagram.com/luc_cui_0/">Instagram</a></li>
+        <li><a class="text-muted" href="">Google</a></li>
+        <li><a class="text-muted" href="https://github.com/luccui000">Github</a></li>
+      </ul>
+    </footer>    
+    </div>
+    
+</div>
+</div>
+{% endblock %}
